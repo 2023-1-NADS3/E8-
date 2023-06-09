@@ -23,9 +23,7 @@ Meu projeto ajuda pessoas a encontrarem lugares para praticar esportes.
 
 <b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
 
-Há também 4 pastas que seguem da seguinte forma:
-
 <b>documentos</b>: Toda a documentação estará nesta pasta.
 
-<b>src</b>: Pasta que contém o código fonte.
+
 
