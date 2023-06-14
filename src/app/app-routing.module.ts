@@ -6,13 +6,14 @@ import { HomeComponent } from './Navegação/home/home.component';
 import { LoginComponent } from './acesso/login/login.component';
 import { MainpageComponent } from './Navegação/mainpage/mainpage.component';
 import { CadastrarQuadrasComponent } from './Navegação/cadastrar-quadras/cadastrar-quadras.component';
+import { Aut } from './Aut';
 
 const routes: Routes = [
   {path: '', component:AcessoComponent},
   {path: 'cadastro', component: CadastroComponent}, 
   {path: 'login', component:LoginComponent},
   {path: 'main', component:MainpageComponent},
-  {path:'home', component: HomeComponent},
+  { path: 'home', component: HomeComponent, canActivate: [Aut] },  
   {path:'cadastrarquadra', component:CadastrarQuadrasComponent}
 ];
 

@@ -43,4 +43,8 @@ export class HomeComponent implements OnInit {
       })
       
     }
+    Sair(){
+      this.autenticacao.sair()
+  
+    }
 }

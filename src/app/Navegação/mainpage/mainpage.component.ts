@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Autenticacao } from 'src/app/autenticacao.service';
 
 @Component({
   selector: 'app-mainpage',
@@ -8,10 +9,20 @@ import { Component } from '@angular/core';
 
 export class MainpageComponent {
 
-  menuVisible = false;
+   constructor(private sair:Autenticacao){}
+
+   menuVisible = false;
 
   menuShow() {
-    this.menuVisible = !this.menuVisible;
-  }
-}
 
+    this.menuVisible  = !this.menuVisible;
+
+  }
+
+
+ Sair(){
+   this.sair.sair()
+
+ }
+
+}

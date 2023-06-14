@@ -7,8 +7,8 @@
       <div class="nav-list">
         <ul class="menu-a">
           <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Agendamentos</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Sair</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Agendamentos</a></li>          
+          
         </ul>
       </div>
       <div class="login-button">
@@ -21,9 +21,8 @@
     <div class="mobile-menu">
       <ul *ngIf="menuVisible" class="menu-b">
         <li class="nav-item"><a href="#" class="nav-link" routerLinkActive="active" routerLink="/main">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link" routerLinkActive="active" routerLink="/home">Agendamentos</a>
-        </li>
-        <li class="nav-item"><a href="#" class="nav-link">Sair</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" routerLinkActive="active" routerLink="/home">Agendamentos</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" (click)="Sair()">Sair</a></li>
       </ul>
     </div>
   </header>

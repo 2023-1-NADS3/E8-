@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Autenticacao } from 'src/app/autenticacao.service';
 
 @Component({
   selector: 'app-header',
@@ -7,10 +8,18 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  constructor(private sair:Autenticacao){
+
+  }
   
   menuVisible = false;
 
   menuShow() {
     this.menuVisible = !this.menuVisible;
+  }
+
+  Sair(){
+    this.sair.sair()
+
   }
 }

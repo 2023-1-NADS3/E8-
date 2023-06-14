@@ -5,8 +5,14 @@ import { Router } from "@angular/router";
 
 @Injectable()
 export class Autenticacao {
+
+
+
     public token_id: any
+    
+
     constructor(private rotas: Router) {
+
     }
 
     public CadUser(usuario: Usuario): Promise<any> {
@@ -45,6 +51,8 @@ export class Autenticacao {
 
                     })
 
+
+
             })
             .catch((err: Error) => {
                 alert('erro')
@@ -52,6 +60,22 @@ export class Autenticacao {
             })
 
     }
+
+    // deleta usuário do banco de dados
+    public async DelUserBD(email: string): Promise<any> {
+
+        const deletar = firebase.database().ref(`usuario_deletado/${btoa(email)}`);
+
+        try {
+            await deletar.remove();
+            console.log('Dados deletados');
+        } catch (err) {
+            console.log(err);
+        }
+    }
+
+
+
 
     public autenticado(): boolean {
 
@@ -70,5 +94,16 @@ export class Autenticacao {
 
     }
 
+    public sair() {
+
+        firebase.auth().signOut()
+            .then(() => {
+                localStorage.removeItem('id_token')
+                this.token_id = undefined
+                this.rotas.navigate(['/']);
+            })
+            .catch((err) => { console.log(err) })
+
+    }
     
 }

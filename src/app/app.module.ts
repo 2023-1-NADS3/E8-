@@ -12,7 +12,7 @@ import { LoginComponent } from './acesso/login/login.component';
 import { CadastroComponent } from './acesso/cadastro/cadastro.component';
 import { HomeComponent } from './Navegação/home/home.component';
 
-import { AuthGuard } from './aut-guard.service';
+import { Aut } from './Aut';
 import { MainpageComponent } from './Navegação/mainpage/mainpage.component';
 import { CadastrarQuadrasComponent } from './Navegação/cadastrar-quadras/cadastrar-quadras.component';
 import { HeaderComponent } from './Navegação/header/header.component';
@@ -35,7 +35,7 @@ import { CadQuadra } from './cad-quadra.service';
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [Autenticacao, AuthGuard, CadQuadra],
+  providers: [Autenticacao, Aut, CadQuadra],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
