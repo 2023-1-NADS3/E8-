@@ -1,0 +1,115 @@
+.card-title {
+    background-image: url("/assets/bol.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+
+
+}
+
+.Text-link {
+    position: absolute;
+    width: 100%;
+    top: 110%;
+    left: 35%;
+    transform: translateX(-50%);
+  }
+.Text-link a{
+    padding: 0 2px;
+}
+
+.card {
+    position: absolute;
+    width: 307px;
+    height: 443px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #D9D9D9;
+    border-radius: 29px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+.Tittle {
+    color: #18162D;
+    font-size: 40px;
+    line-height: 48px;
+    font-style: normal;
+}
+
+.form-group input {
+    border-radius: 0;
+    width: 240px;
+    padding: 3px 10px;
+    background-color: transparent;
+    border: none;
+    color: #1E4444;
+    font-size: 15px;
+    border-bottom: 1px solid #000000;
+    ;
+}
+
+.form-group {
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+.btn {
+    color: #ffffff;
+    background-color: #2d1f80;
+}
+
+.form-button {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 10px;
+    color: #DEDDE3;
+    font-size: 24px;
+    width: 240px;
+    height: 48px;
+    background: #18162D;
+}
+
+.text {
+    color: #1E4444;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 0 0 10px 0;
+}
+
+.retangle {
+    background: #18162D;
+    height: 50px;
+}
+
+.Seila img {
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 12px;
+}
+
+
+.card-link {
+    color: #2d1f80;
+    position: absolute;
+}
+
+.titulo {
+    color: #260db3;
+    position: relative;
+    padding-bottom: 10%;
+    text-align: center;
+
+}

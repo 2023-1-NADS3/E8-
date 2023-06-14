@@ -1,0 +1,52 @@
+
+<section class="retangle"></section>
+
+<header class="Seila">
+  <img src="../../../assets/bolalogo.png">
+</header>
+
+
+
+
+
+<div class="card">
+
+  <div class="card-body">
+    <div class="card-title">
+      <div class="titulo">
+        <h3 class="Tittle">Olá</h3>
+      </div>
+    </div>
+
+
+    <div class="text">
+      <h6>crie uma conta para continuar!</h6>
+    </div>
+
+    <form [formGroup]="Form" (ngSubmit)="CadastrarUsuario()">
+      <div class="form-group">
+        <input type="email" class="form-control" placeholder="E-mail" formControlName="email">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Nome completo" formControlName="nome_completo">
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Telefone" formControlName="telefone">
+      </div>
+
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Senha" formControlName="senha">
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary btn-sm btn-block form-button">registre-se</button>
+      <br>
+      <br>
+      <a href="#" (click)="exibirlogin()" class="card-link">já tem uma conta? clique aqui
+      </a>
+    </form>
+    
+
+
+  </div>
+</div>

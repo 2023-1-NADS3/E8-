@@ -1,0 +1,33 @@
+<app-header> </app-header>
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <button class="btn btn-primary me-md-2" type="button" (click)="Recuperar()">Lugares marcados!</button>
+
+</div>
+
+<div class="" *ngFor="let publicacao of Quadras">
+  <div class="card-boxx">
+    <div class="">
+      <div class="">
+      </div>
+      <div *ngIf="publicacao.url && publicacao.url.length">
+        <img class="card-img" [src]="publicacao.url" />
+      </div>
+      <div class="">
+        <p class="">
+          <strong> {{publicacao.endereco}}</strong>
+        </p>
+        <p class="">
+          <strong>{{publicacao.nome_usuario}}</strong>
+        </p>
+        <p class="">
+          <strong>Nº {{publicacao.numero}}</strong>
+        </p>
+        <div>
+          <button class="btn btn-primary me-md-2" type="button" (click)="Deletar(publicacao)">Deletar dados</button>
+        </div>
+        <hr />
+      </div>
+    </div>
+  </div>
+</div>
